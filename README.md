@@ -8,6 +8,7 @@ This is a website detailing a music festival - Coastal Groove Festival. It has d
 **How to run the website**
 
 Run npm install or yarn install
+
 Run node index.js
 
 You should now be able to view the website by going to http://localhost:5000 !
