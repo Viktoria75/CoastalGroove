@@ -1,0 +1,48 @@
+.stage-name, .stage-desc{
+    margin:1rem;
+}
+
+.stage-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:2rem;
+    align-items: center;
+    align-self: center;
+}
+
+.stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    margin: 1rem;
+    width: 100%; 
+}
+
+
+.stage-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--beige);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem;
+    font-size: large;
+    margin: 1rem;
+}
+
+.title{
+    font-size:3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .stage-desc {
+        min-width: 330px;
+    }
+}
+

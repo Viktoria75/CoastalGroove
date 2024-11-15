@@ -1,0 +1,74 @@
+body, main {
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    margin-top:2rem;
+}
+
+.game-board {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, 150px);
+    grid-gap: 2rem;
+    margin-bottom: 3rem; 
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.desc {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.resetbtn {
+    height: 3rem;
+    width: 5rem;
+    font-weight: bold;
+    margin: 1rem;
+    border-radius: 6px;
+    background-color: white;
+    border:none;
+    padding:0.5rem;
+}
+
+.status {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color:white;
+}
+
+@media screen and (max-width: 768px) {
+    .game-board {
+        grid-template-columns: repeat(4, 65px); 
+    }
+
+    .card {
+        height: 65px;
+        width: 65px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .game-board {
+        grid-template-columns: repeat(3, 55px); 
+    }
+
+    .card {
+        height: 55px;
+        width: 55px;
+    }
+}

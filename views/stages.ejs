@@ -1,0 +1,19 @@
+<%- include('partials/layout') %>
+<%- include('partials/header') %> 
+<link rel="stylesheet" href="/css/stages.css">
+
+<main>
+    <h1 class="title">Different Stages at our event:</h1>
+    <div class="stage-wrapper">
+        <% for (const stage of stages) { %>
+            <div class="stage">
+                <h1 class="stage-name"><%= stage.stage_name %></h1>
+                <p class="stage-desc"><%= stage.description %></p>
+            </div>
+        <% } %>
+    </div>
+</main>
+
+
+
+<%- include('partials/footer') %> 

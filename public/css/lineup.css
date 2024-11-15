@@ -1,0 +1,29 @@
+.title{
+    margin-bottom:2rem;
+}
+
+.lineup-list{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.artist{
+    margin:2rem;
+    background-color: var(--beige);
+    border-radius:0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    padding:1rem;
+    max-width:240px;
+    min-width:240px;
+    text-align: center;
+}
+
+.artist-name{
+    margin-bottom:0.5rem;
+}
+
+h3{
+    color:white;
+}

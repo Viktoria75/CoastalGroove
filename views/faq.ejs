@@ -1,0 +1,58 @@
+<%- include('partials/layout') %>
+<link rel="stylesheet" href="/css/faq.css">
+<script src="/scripts/faq.js"></script>
+
+    <%- include('partials/header') %> 
+
+    <main>
+        <h1>Some of our frequently asked questions:</h1>
+
+        <div class="questions-wrapper">
+            <div class="question" id="question1">
+                <div class="question-data">
+                    <p class="question-text">Can I bring my own food and drinks to the festival?</p>
+                    <i class="fa fa-plus" onclick="toggleAnswer('question1')"></i>
+                </div>
+                <div class="answer-data">
+                    <p class="question-answer">Outside food and drinks are generally not allowed. However, we offer a diverse range of food and beverage vendors inside the festival grounds to cater to different tastes.</p>
+                    <i class="fa fa-minus" onclick="toggleAnswer('question1')"></i>
+                </div>
+            </div>
+
+            <div class="question" id="question2">
+                <div class="question-data">
+                    <p class="question-text">Are children allowed at the music festival?</p>
+                    <i class="fa fa-plus" onclick="toggleAnswer('question2')"></i>
+                </div>
+                <div class="answer-data">
+                    <p class="question-answer">The festival is generally open to all ages, but some areas may have age restrictions. Check the event details for specific information, and keep in mind that certain performances or venues may be more suitable for adults.</p>
+                    <i class="fa fa-minus" onclick="toggleAnswer('question2')"></i>
+                </div>
+            </div>
+
+            <div class="question" id="question3">
+                <div class="question-data">
+                    <p class="question-text">Is there parking available at the festival venue?</p>
+                    <i class="fa fa-plus" onclick="toggleAnswer('question3')"></i>
+                </div>
+                <div class="answer-data">
+                    <p class="question-answer">Yes, we provide designated parking areas for festival attendees. Please refer to our website for parking details, including any associated fees.</p>
+                    <i class="fa fa-minus" onclick="toggleAnswer('question3')"></i>
+                </div>
+            </div>
+
+            <div class="question" id="question4">
+                <div class="question-data">
+                    <p class="question-text">What should I do if I lose my ticket or wristband?</p>
+                    <i class="fa fa-plus" onclick="toggleAnswer('question4')"></i>
+                </div>
+                <div class="answer-data">
+                    <p class="question-answer">In the case of a lost ticket or wristband, contact our customer support as soon as possible. We may be able to assist you in obtaining a replacement, depending on the circumstances.</p>
+                    <i class="fa fa-minus" onclick="toggleAnswer('question4')"></i>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <%- include('partials/footer') %> 

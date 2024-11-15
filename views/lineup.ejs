@@ -1,0 +1,20 @@
+<%- include('partials/layout') %>
+<link rel="stylesheet" href="/css/lineup.css">
+<%- include('partials/header') %> 
+
+<main>
+    <h1 class="title">Lineup</h1>
+    <h3>Join us on <%=festivalDate%> for an unforgettable experience!</h3>
+    <div class="lineup-list">
+        <% lineup.forEach(artist => { %>
+            <div class="artist">
+                <h2 class="artist-name"><%= artist.artist_name %></h2>
+                <p class="artist-genre"><strong>Genre:</strong> <%= artist.genre %></p>
+                <p class="artist-stage"><strong>Stage:</strong> <%= artist.stage %></p>
+                <p class="artist-time"><strong>Time:</strong> <%= artist.time %></p>
+            </div>
+        <% }) %>
+    </div>
+</main>
+
+<%- include('partials/footer') %> 

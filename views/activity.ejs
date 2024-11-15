@@ -1,0 +1,21 @@
+<%- include('partials/layout') %>
+<link rel="stylesheet" href="/css/activity.css">
+<script src="/scripts/activity.js"></script>
+
+<%- include('partials/header') %>
+
+<main>
+    <h1 class="title">Harmony Hues</h1>
+    <h3 class="desc">A color matching game</h3>
+
+    <div class="wrapper">
+        <button id="reset-button" class="resetbtn">Reset Game</button>
+        <div id="message-display" class="status"></div>
+        <div id="game-board" class="game-board">
+            <!-- cards will be dynamically added here using JavaScript -->
+        </div>
+    </div>
+</main>
+
+<%- include('partials/footer') %>
+
